@@ -1,4 +1,4 @@
-<!-- # README
+# README
 
 ## usersテーブル
 |  Column              |  Type  |  Option                 |
@@ -11,7 +11,7 @@
 - has_many :menus
 
 
-## menusテーブル
+## main_menusテーブル
 
 |   Column      |  Type     |  Option                      |
 | ------------- | --------- | ---------------------------- |
@@ -23,6 +23,8 @@
 ### Association
 - has_many :tags, through: menu_tag_relation
 - belongs_to :user
+- has_one :ingredient
+- has_one :recipe
 
 
 
@@ -36,7 +38,7 @@
 
 
 
-## ingredientテーブル
+## main_ingredientsテーブル
 |   Column      |  Type     |  Option                      |
 | ------------- | --------- | ---------------------------- |
 | name          | string    | null:false                   |
@@ -48,7 +50,7 @@
 
 
 
-## recipeテーブル
+## main_recipesテーブル
 |   Column      |  Type     |  Option                      |
 | ------------- | --------- | ---------------------------- |
 | name          | string    | null:false                   |
@@ -57,5 +59,5 @@
 ### Association
 - belongs_to :menu
 
- -->
+
 
