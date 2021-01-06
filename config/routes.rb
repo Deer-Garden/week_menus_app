@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   root to: 'main_menus#index'
 
   resources :main_menus
-
-  resources :users
+  resources :users, only: [:edit, :update]
 
 end
